@@ -37,7 +37,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string', required: false }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - widget: select
@@ -46,6 +46,11 @@ collections:
         multiple: true
         create: true
         options: ['Tags', 'created', 'from', 'config.yml']
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
   - label: 'Settings'
     name: 'settings'
     editor:
