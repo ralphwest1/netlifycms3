@@ -10,6 +10,10 @@ image: https://dometag.com/wp-content/themes/dometag/images/logo.png
 
 Here is some content
 
-
-
 and some more
+
+
+
+
+
+![alt Test](/static/img/dtlogo.png "a Title")
